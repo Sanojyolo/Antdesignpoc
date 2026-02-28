@@ -1,0 +1,53 @@
+/* Scoped overrides for Vygoo Components */
+
+.vygoo-field-wrapper .ant-input,
+.vygoo-field-wrapper .ant-select-selector,
+.vygoo-field-wrapper .ant-picker {
+    border-radius: 12px !important;
+    height: 48px !important;
+    border-color: #d9d9d9 !important;
+    border-width: 1px !important;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+/* Input specific padding */
+.vygoo-field-wrapper .ant-input {
+    padding: 10px 16px !important;
+}
+
+/* Select specific alignment */
+.vygoo-field-wrapper .ant-select-selector {
+    padding: 0 11px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.vygoo-field-wrapper .ant-select-selection-search-input {
+    height: 46px !important;
+}
+
+/* Universal Solid Dark Blue Focus States */
+/* Targets regular inputs, focused selects, and focused pickers */
+.vygoo-field-wrapper .ant-input:focus,
+.vygoo-field-wrapper .ant-input-focused,
+.vygoo-field-wrapper .ant-select-focused .ant-select-selector,
+.vygoo-field-wrapper .ant-picker-focused,
+.vygoo-field-wrapper .ant-picker-range-focused {
+    border-color: #1d4ed8 !important;
+    /* Solid Dark Blue */
+    border-width: 2px !important;
+    /* Defined thickness */
+    border-style: solid !important;
+    box-shadow: none !important;
+    /* Clean solid look */
+    outline: 0 !important;
+    z-index: 10 !important;
+    /* Ensure border isn't clipped */
+}
+
+/* Hover States */
+.vygoo-field-wrapper .ant-input:hover,
+.vygoo-field-wrapper .ant-select:not(.ant-select-disabled):hover .ant-select-selector,
+.vygoo-field-wrapper .ant-picker:not(.ant-picker-disabled):hover {
+    border-color: #2563eb !important;
+}
