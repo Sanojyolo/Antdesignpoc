@@ -51,3 +51,8 @@
 .vygoo-field-wrapper .ant-picker:not(.ant-picker-disabled):hover {
     border-color: #2563eb !important;
 }
+
+/* Remove RangePicker active underline */
+.vygoo-field-wrapper .ant-picker-range .ant-picker-active-bar {
+    display: none !important;
+}
